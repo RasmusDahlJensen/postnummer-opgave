@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="feb_scripts.js" defer></script>
+    <style>
+        input{
+            margin: 1%;
+            height: 25px;
+            width: 165px;
+        }
+        #resultBox{
+            height: 50px;
+            width: 300px;
+            border: 1px rgb(0, 0, 0) solid;
+            margin: 1%;
+            text-align: center;
+            padding-top: 25px;
+        }
+
+        #btn{
+            display: block;
+            padding: 5px;
+            padding-right: 15px;
+            padding-left: 15px;
+            border-radius: 0px;
+            box-shadow: 0px;
+            background-color: white;
+            margin-left: 4px;
+        }
+        .buttonSection{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+<fieldset>
+<form>
+    <div>
+        <label for="postnummer">Postnummer:</label>
+        <input type="text" name="postnummer" id="postnummer" placeholder="Indtast postnummer..">
+            <div class="buttonSection">
+                <button type="button" id="btn">Send</button>
+                <button type="r" id="btn">Reset</button>
+            </div>
+    </div>
+</form>
+
+    <div id="resultBox">Bynavn vil blive printet her...</div>
+</fieldset>
+</body>
+</html>
