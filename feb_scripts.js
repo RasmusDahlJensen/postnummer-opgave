@@ -2,44 +2,45 @@ const btn = document.querySelector('#btn');
 let finalResult;
 
 btn.addEventListener('click', function(){ //Her tilføjer jeg en function til min knap - som er en if else function som leder efter den værdi mit input har
+    result = document.querySelector('#postnummer').value;
 
-   if (document.querySelector('#postnummer').value >= 1000 && (document.querySelector('#postnummer').value) <= 2999) { //Her tjekker den om værdien som mit input er true, ellers forsætter den nedad indtil den finder det.
+    
+   if (result >= 1000 && result <= 2999) { //Her tjekker den om værdien som mit input er true, ellers forsætter den nedad indtil den finder det.
        finalResult = 'Københavns Kommune, Frederiksberg og omegn'
        
-} else if (document.querySelector('#postnummer').value >= 3000 && (document.querySelector('#postnummer').value) <= 3699) {
+} else if (result >= 3000 && result <= 3699) {
     finalResult = 'Nordsjælland'
     
-} else if (document.querySelector('#postnummer').value >= 3700 && (document.querySelector('#postnummer').value) <= 3799) {
+} else if (result >= 3700 && result <= 3799) {
     finalResult = 'Bornholm'
     
-} else if (document.querySelector('#postnummer').value >= 3800 && (document.querySelector('#postnummer').value) <= 3899) {
+} else if (result >= 3800 && result <= 3899) {
     finalResult = 'Færøerne'
     
-} else if (document.querySelector('#postnummer').value >= 3900 && (document.querySelector('#postnummer').value) <= 3999) {
+} else if (result >= 3900 && result <= 3999) {
     finalResult = 'Grønland'
     
-} else if (document.querySelector('#postnummer').value >= 4000 && (document.querySelector('#postnummer').value) <= 4999) {
+} else if (result >= 4000 && result <= 4999) {
     finalResult = 'Østsjælland, Midt- og Vestsjælland, Sydsjælland, Lolland-Falster og Møn'
     
-} else if (document.querySelector('#postnummer').value >= 5000 && (document.querySelector('#postnummer').value) <= 5999) {
+} else if (result >= 5000 && result <= 5999) {
     finalResult = 'Fyn og øerne'
     
-} else if (document.querySelector('#postnummer').value >= 6000 && (document.querySelector('#postnummer').value) <= 6999) {
+} else if (result >= 6000 && result <= 6999) {
     finalResult = 'Sønderjylland'
     
-} else if (document.querySelector('#postnummer').value >= 7000 && (document.querySelector('#postnummer').value) <= 7999) {
+} else if (result >= 7000 && result <= 7999) {
     finalResult = 'Midtjylland'
     
-} else if (document.querySelector('#postnummer').value >= 8000 && (document.querySelector('#postnummer').value) <= 8999) {
+} else if (result >= 8000 && result <= 8999) {
     finalResult = 'Østjylland'
     
-} else if (document.querySelector('#postnummer').value >= 9000 && (document.querySelector('#postnummer').value) <= 9999) {
+} else if (result >= 9000 && result <= 9999) {
     finalResult = 'Nordjylland'
     
 } else{ //Hvis min if else function ikke finder noget som passer, så får brugeren en fejl 40.
     finalResult = ' Fejl 40 - Prøv igen.'
 }
 
-   let result = finalResult;
-   document.getElementById('resultBox').innerHTML = result; //Her udskriver den resultaten i min div til sidst.
+   document.getElementById('resultBox').innerHTML = finalResult; //Her udskriver den resultaten i min div til sidst.
 })
